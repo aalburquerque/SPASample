@@ -3,12 +3,13 @@ define([ 'app' ], function(app) {
 			function($scope, IncidentSrv) {
 
 				init();
-		
+
 				function init() {
 					IncidentSrv.loadMasterValues();
 				}
 
+
+
 			} ]);
 
 });
-

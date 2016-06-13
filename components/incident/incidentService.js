@@ -14,10 +14,10 @@ define(
 										var selectedSubject = {};
 										var selectedAction = {};
 										var selectedReport = {};
-										
+
 										var selectedReportType;
-										
-										
+
+
 
 										service.myMasterValues = {};
 
@@ -28,11 +28,11 @@ define(
 												selectedIncidentParam) {
 											selectedIncident = selectedIncidentParam
 										};
-										
+
 										service.setSelectedReportType = function(selectedReportTypeParam){
 											selectedReportType=selectedReportTypeParam;
 										}
-										
+
 										service.getSelectedReportType = function() {
 											return selectedReportType;
 										}
@@ -60,7 +60,7 @@ define(
 												selectedReportParam) {
 											selectedReport = selectedReportParam
 										};
-										
+
 										service.getProcedureTypeName = function(
 												procedureTypeId) {
 											// Sacar el texto
@@ -73,7 +73,7 @@ define(
 											}
 											return procedureTypeLabel;
 										}
-										
+
 										service.getJusticialBodyName = function(
 												judicialBodyId) {
 											// Sacar el texto
@@ -90,7 +90,7 @@ define(
 										service.loadMasterValues = function() {
 											$http
 													.get(
-															'../components/incident/data.json')
+															'components/incident/data.json')
 													.success(
 															function(data) {
 																service.myMasterValues = data;

@@ -46,7 +46,7 @@ define(
 
 											$http
 													.get(
-															'../components/incident/simData.json')
+															'components/incident/simData.json')
 													.success(
 															function(data) {
 																$rootScope.incidentList = data;
@@ -54,14 +54,14 @@ define(
 																$rootScope.incidentsToPresentList = [];
 
 																for (var i = 0; i < $rootScope.incidentList.length; i++) {
-																	
+
 																		$rootScope.incidentsToPresentList
 																			.push(service.getIncidentToPresent($rootScope.incidentList[i]));
 																}
 
 																// total elementos que casan con el filtro
 																$rootScope.totalIncidentsToPresent=$rootScope.incidentsToPresentList.length;
-																
+
 																var firstRow = (pageNumber - 1)
 																		* pageSize;
 

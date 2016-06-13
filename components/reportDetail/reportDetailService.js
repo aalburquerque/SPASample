@@ -23,7 +23,7 @@ define(
 
 											$http
 													.get(
-															'../components/reportDetail/reportTypesData.json')
+															'components/reportDetail/reportTypesData.json')
 													.success(
 															function(data) {
 																service.reportTypeList = data;

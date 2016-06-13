@@ -11,16 +11,22 @@ define(
 									'$rootScope',
 									'IncidentSearchSrv',
 									'IncidentSrv',
+									'growl',
 									function($scope, $rootScope,
-											IncidentSearchSrv, IncidentSrv) {
+											IncidentSearchSrv, IncidentSrv, growl) {
 
 										var paginationOptions = {
 											pageNumber : 1,
 											pageSize : 5,
-											sort : null 
+											sort : null
 										};
-										
+
 										$scope.searchText='';
+
+										$scope.showSuccess = function(){
+											// growl.success('This is a success mesage.',{title: 'Success!'});
+											alert('success');
+										}
 
 										$scope.incidentGridOptions = {
 											enableFiltering : true,
@@ -94,7 +100,7 @@ define(
 										};
 
 										var getPage = function(pageNumber, pageSize, searchText) {
-/*											
+/*
 											var url;
 											switch (paginationOptions.sort) {
 											case uiGridConstants.ASC:
@@ -107,7 +113,7 @@ define(
 												url = 'https://cdn.rawgit.com/angular-ui/ui-grid.info/gh-pages/data/100.json';
 												break;
 											}
-*/										
+*/
 /*
 											$http
 													.get(url)
@@ -123,17 +129,17 @@ define(
 																						+ paginationOptions.pageSize);
 															});
 */
-										
+
 											IncidentSearchSrv.getIncidentItems(pageNumber,pageSize, searchText);
-											
+
 											// total elementos de la busqueda
 											$scope.incidentGridOptions.totalItems =  $rootScope.totalIncidentsToPresent;
-											
+
 											// lista de filas de la pagina activa
 											$scope.incidentGridOptions.data = $rootScope.incidentsToPresentList;
 										};
 
-										
+
 
 										$scope.setSelectedIncident = function(
 												selectedIncident) {
@@ -161,12 +167,14 @@ define(
 										};
 
 										$scope.executeSearch = function() {
-											
+
 											paginationOptions.pageNumber=1;
 											paginationOptions.pageSize =5;
 											paginationOptions.sort=null;
-											
+
 											getPage(paginationOptions.pageNumber, paginationOptions.pageSize, $scope.searchText);
+
+										 growl.warning("this will not be closed automatically", {ttl: -1});
 										};
 
 									} ]);
