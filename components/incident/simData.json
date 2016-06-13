@@ -1,0 +1,628 @@
+[{
+	"incidentCode": "ICsim2000063",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2016-05-30T14:48:39.393Z",
+	"factTimeInDay": "2016-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "1/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+{
+	"incidentCode": "ICsim2000064",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2016-05-30T14:48:39.393Z",
+	"factTimeInDay": "2016-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "2/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+{
+	"incidentCode": "ICsim2000065",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2016-05-30T14:48:39.393Z",
+	"factTimeInDay": "2016-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "3/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+{
+	"incidentCode": "ICsim2000066",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2016-05-30T14:48:39.393Z",
+	"factTimeInDay": "2016-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "4/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+{
+	"incidentCode": "ICsim2000067",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2016-05-30T14:48:39.393Z",
+	"factTimeInDay": "2016-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "5/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+{
+	"incidentCode": "ICsim2000068",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2016-05-30T14:48:39.393Z",
+	"factTimeInDay": "2016-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "6/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+{
+	"incidentCode": "ICsim2000069",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2016-05-30T14:48:39.393Z",
+	"factTimeInDay": "2016-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "7/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+{
+	"incidentCode": "ICsim2000070",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2016-05-30T14:48:39.393Z",
+	"factTimeInDay": "2016-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "8/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+
+
+{
+	"incidentCode": "ICsim2000053",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2016-05-30T14:48:39.393Z",
+	"factTimeInDay": "2016-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "9/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+{
+	"incidentCode": "ICsim2000055",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2016-05-30T14:48:39.393Z",
+	"factTimeInDay": "2016-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "10/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+{
+	"incidentCode": "ICsim2000056",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2016-05-30T14:48:39.393Z",
+	"factTimeInDay": "2016-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "11/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+{
+	"incidentCode": "ICsim2000057",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2016-05-30T14:48:39.393Z",
+	"factTimeInDay": "2016-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "12/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+{
+	"incidentCode": "ICsim2000058",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2016-05-30T14:48:39.393Z",
+	"factTimeInDay": "2016-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "13/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+{
+	"incidentCode": "ICsim2000059",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2016-05-30T14:48:39.393Z",
+	"factTimeInDay": "2016-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "14/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+{
+	"incidentCode": "ICsim2000040",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2016-05-30T14:48:39.393Z",
+	"factTimeInDay": "2016-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "15/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+
+{
+	"incidentCode": "ICsim2000033",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2016-05-30T14:48:39.393Z",
+	"factTimeInDay": "2016-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "16/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+{
+	"incidentCode": "ICsim2000034",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2016-05-30T14:48:39.393Z",
+	"factTimeInDay": "2016-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "17/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+{
+	"incidentCode": "ICsim2000035",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2016-05-30T14:48:39.393Z",
+	"factTimeInDay": "2016-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "18/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+{
+	"incidentCode": "ICsim2000036",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2016-05-30T14:48:39.393Z",
+	"factTimeInDay": "2016-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "19/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+{
+	"incidentCode": "ICsim2000037",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2016-05-30T14:48:39.393Z",
+	"factTimeInDay": "2016-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "20/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+{
+	"incidentCode": "ICsim2000038",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2016-05-30T14:48:39.393Z",
+	"factTimeInDay": "2016-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "21/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+{
+	"incidentCode": "ICsim2000039",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2016-05-30T14:48:39.393Z",
+	"factTimeInDay": "2016-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "22/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+{
+	"incidentCode": "ICsim2000020",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2016-05-30T14:48:39.393Z",
+	"factTimeInDay": "2016-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "23/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+
+
+{
+	"incidentCode": "ICsim2000053",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2016-05-30T14:48:39.393Z",
+	"factTimeInDay": "2016-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "24/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+{
+	"incidentCode": "ICsim2000054",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2016-05-30T14:48:39.393Z",
+	"factTimeInDay": "2016-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "25/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+{
+	"incidentCode": "ICsim2000055",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2016-05-30T14:48:39.393Z",
+	"factTimeInDay": "2016-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "26/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+{
+	"incidentCode": "ICsim2000056",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2016-05-30T14:48:39.393Z",
+	"factTimeInDay": "2016-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "27/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+{
+	"incidentCode": "ICsim2000057",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2016-05-30T14:48:39.393Z",
+	"factTimeInDay": "2016-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "28/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+{
+	"incidentCode": "ICsim2000058",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2016-05-30T14:48:39.393Z",
+	"factTimeInDay": "2016-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "29/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+{
+	"incidentCode": "ICsim2000059",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2016-05-30T14:48:39.393Z",
+	"factTimeInDay": "2016-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "30/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+{
+	"incidentCode": "ICsim2000040",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2016-05-30T14:48:39.393Z",
+	"factTimeInDay": "2016-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "31/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+
+
+
+{
+	"incidentCode": "ICsim2100063",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2116-05-30T14:48:39.393Z",
+	"factTimeInDay": "2116-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "32/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+{
+	"incidentCode": "ICsim2100064",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2116-05-30T14:48:39.393Z",
+	"factTimeInDay": "2116-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "33/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+{
+	"incidentCode": "ICsim2100065",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2116-05-30T14:48:39.393Z",
+	"factTimeInDay": "2116-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "34/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+{
+	"incidentCode": "ICsim2100066",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2116-05-30T14:48:39.393Z",
+	"factTimeInDay": "2116-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "35/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+{
+	"incidentCode": "ICsim2100067",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2116-05-30T14:48:39.393Z",
+	"factTimeInDay": "2116-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "36/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+{
+	"incidentCode": "ICsim2100068",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2116-05-30T14:48:39.393Z",
+	"factTimeInDay": "2116-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "37/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+{
+	"incidentCode": "ICsim2100069",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2116-05-30T14:48:39.393Z",
+	"factTimeInDay": "2116-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "38/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+{
+	"incidentCode": "ICsim2100070",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2116-05-30T14:48:39.393Z",
+	"factTimeInDay": "2116-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "39/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+
+
+{
+	"incidentCode": "ICsim2100053",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2116-05-30T14:48:39.393Z",
+	"factTimeInDay": "2116-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "40/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+{
+	"incidentCode": "ICsim2100054",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2116-05-30T14:48:39.393Z",
+	"factTimeInDay": "2116-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "41/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+{
+	"incidentCode": "ICsim2100055",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2116-05-30T14:48:39.393Z",
+	"factTimeInDay": "2116-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "42/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+{
+	"incidentCode": "ICsim2100056",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2116-05-30T14:48:39.393Z",
+	"factTimeInDay": "2116-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "43/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+{
+	"incidentCode": "ICsim2100057",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2116-05-30T14:48:39.393Z",
+	"factTimeInDay": "2116-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "44/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+{
+	"incidentCode": "ICsim2100058",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2116-05-30T14:48:39.393Z",
+	"factTimeInDay": "2116-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "45/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+{
+	"incidentCode": "ICsim2100059",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2116-05-30T14:48:39.393Z",
+	"factTimeInDay": "2116-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "46/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+{
+	"incidentCode": "ICsim2100040",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2116-05-30T14:48:39.393Z",
+	"factTimeInDay": "2116-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "47/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+
+{
+	"incidentCode": "ICsim2100033",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2116-05-30T14:48:39.393Z",
+	"factTimeInDay": "2116-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "48/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+{
+	"incidentCode": "ICsim2100034",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2116-05-30T14:48:39.393Z",
+	"factTimeInDay": "2116-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "49/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+{
+	"incidentCode": "ICsim2100035",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2116-05-30T14:48:39.393Z",
+	"factTimeInDay": "2116-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "50/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+{
+	"incidentCode": "ICsim2100036",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2116-05-30T14:48:39.393Z",
+	"factTimeInDay": "2116-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "51/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+{
+	"incidentCode": "ICsim2100037",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2116-05-30T14:48:39.393Z",
+	"factTimeInDay": "2116-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "52/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+{
+	"incidentCode": "ICsim2100038",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2116-05-30T14:48:39.393Z",
+	"factTimeInDay": "2116-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "53/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+{
+	"incidentCode": "ICsim2100039",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2116-05-30T14:48:39.393Z",
+	"factTimeInDay": "2116-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "54/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+{
+	"incidentCode": "ICsim2100021",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2116-05-30T14:48:39.393Z",
+	"factTimeInDay": "2116-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "55/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+},
+{
+	"incidentCode": "ICsim2000054",
+	"judicialBodyId": 1,
+	"factTimeInYear": "2016-05-30T14:48:39.393Z",
+	"factTimeInDay": "2016-05-30T14:48:39.393Z",
+	"procedureType": 2,
+	"procedureNumber": "56/1234",
+	"nig": "1234",
+	"isPrivate": true,
+	"insuranceCompany": "aaaa"
+}
+]

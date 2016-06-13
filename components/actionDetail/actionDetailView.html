@@ -1,0 +1,186 @@
+<ol class="breadcrumb">
+    <li class="active">
+        <a href="#incidentSearch">Gestión de
+			Subjectes</a>
+    </li>
+    <li>Detalle actuación</li>
+</ol>
+<div class='row' ng-controller="ActionDetailCtrl">
+    <div class="col-md-1">
+        <span></span>
+    </div>
+    <div class="col-md-10">
+        <form class="form-horizontal" role="form" novalidate>
+            <ul class="nav nav-tabs">
+                <li class="active">
+                    <a data-toggle="tab" href="#menuActionDetail">Actuacion</a>
+                </li>
+                <li>
+                    <a  ng-show="!showActionCode()">Informes</a>
+                    <a data-toggle="tab" ng-show="showActionCode()" href="#menuReport">Informes</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div id="menuActionDetail" class="tab-pane fade in active">
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10">
+                            <fieldset class="scheduler-border">
+                                <legend class="scheduler-border">
+                                    <span ng-show="!showActionCode()">Nuevo Actuación</span>
+                                    <span ng-show="showActionCode()">Actuación {{action.actionCode}}</span>
+                                </legend>
+                                <fieldset class="scheduler-border">
+                                    <legend class="scheduler-border">Detalle de actuación</legend>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label class="control-label" for="subject">Código Sujeto</label>
+                                            <input name="subject" id="subject" ng-model="action.subjectCode" class="form-control" readonly />
+                                        </div>
+                                        <div class="col-sm-6">
+                                              <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label class="control-label" for="startDate">Fecha Inicio </label>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <p class="input-group">
+                                                        <input type="text" class="form-control" id="startDate" name="startDate" uib-datepicker-popup="{{format}}" ng-model="action.startDate" is-open="popup1.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats" />
+                                                        <span class="input-group-btn">
+                                                            <button type="button" class="btn btn-default" ng-click="open1()">
+                                                                <i class="glyphicon glyphicon-calendar"></i>
+                                                            </button>
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label class="control-label" for="startDate">Fecha Fin </label>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <p class="input-group">
+                                                        <input type="text" class="form-control" id="endDate" name="endDate" uib-datepicker-popup="{{format}}" ng-model="action.endDate" is-open="popup2.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats" />
+                                                        <span class="input-group-btn">
+                                                            <button type="button" class="btn btn-default"	ng-click="open2()">
+                                                                <i class="glyphicon glyphicon-calendar"></i>
+                                                            </button>
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label class="control-label col-sm-2" for="assistanceId">T.Asistencia</label>
+                                            <select id="assistanceId" name="assistanceId" ng-model="action.assistanceId" ng-options="obj.id as obj.name for obj in assistanceList" class="form-control " multiple></select>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label class="control-label col-sm-2" for="implication">Implicación</label>
+                                            <select class="form-control " id="implication" name="implication" ng-model="action.implication" ng-options="obj.id as obj.name for obj in implicationList">
+                                                <option value="0">Escoja una opci&oacute;n</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label class="control-label col-sm-2" for="autopsy">Núm.autopsia
+                                            </label>
+                                            <input class="form-control col-sm-2" id="autopsy" name="autopsy" type="text" value="" ng-model="action.autopsy" />
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <label class="control-label col-sm-2" for="stateId">Estado</label>
+                                            <input id="stateId" name="stateId" type="text" ng-model="action.stateName" readonly class="form-control" />
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <fieldset class="scheduler-border">
+                                    <legend class="scheduler-border">Perito</legend>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label class="control-label col-sm-2" for="roleId">Grupo</label>
+                                            <select id="roleId" name="roleId" ng-model="action.roleId" ng-change="getExpertItems()" ng-options="obj.id as obj.name for obj in roleList" class="form-control  ">
+                                                <option value="0">Escoja una opci&oacute;n</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <label class="control-label col-sm-2" for="expertId">Perito</label>
+                                            <select class="form-control  " id="expertId" name="expertId" ng-model="action.expertId" ng-options="obj.id as obj.name for obj in expertList">
+                                                <option value="0">Escoja una opci&oacute;n</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <fieldset class="scheduler-border">
+                                    <legend class="scheduler-border">Opciones</legend>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label class="control-label col-sm-2" for="comments">Observaciones</label>
+                                            <textarea id="comments" name="comments" rows="5" ng-model="action.comments" class="form-control "></textarea>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox" ng-model="action.isOnCall" />Interconsulta
+
+                                            </label>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </fieldset>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+
+
+                </div>
+                <div id="menuReport" class="tab-pane fade">
+
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10">
+
+                            <fieldset class="scheduler-border">
+                                <legend class="scheduler-border">Listado de Informes</legend>
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <span></span>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <select id="reportTypeId" name="reportTypeId" ng-model="reportTypeId" ng-options="obj.id as obj.name for obj in reportTypeList" class="form-control  ">
+                                            <option value="0">Escoja un Informe</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-1">
+                                        <a href="#reportDetail">
+                                            <span class="btn btn-warning" ng-click="setSelectedReport('');" ng-disabled="!reportTypeId">Nuevo Informe</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div id="grid1" ui-grid="gridOptions" ui-grid-tree-view ui-grid-selection class="grid"></div>
+                                </div>
+                        </div>
+                        </fieldset>
+                        <div class="col-md-1"></div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 text-right">
+                        <a href="#incidentDetail" class="btn btn-warning .navbar-right">Atrás</a>
+                        <a href="#incidentDetail" ng-click="saveAction()" class="btn btn-warning .navbar-right">Guardar</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </form>
+    </div>
+    <div class="col-md-1">
+        <span></span>
+    </div>
+</div>

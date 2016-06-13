@@ -1,0 +1,18 @@
+[{
+	"reportId": "1",
+	"reportName": "Documento Texto Libre",
+	"fields" : [
+		{ "fieldName" : "Titulo",
+		  "fieldType" : "text",
+		  "fieldValue" : "" 
+		},
+		{ "fieldName" : "Cierre",
+		  "fieldType" : "text" ,
+		  "fieldValue" : "" 
+		},{ "fieldName" : "Texto libre",
+		  "fieldType" : "textArea" ,
+		  "fieldValue" : "" 
+		}
+	]
+ }
+]

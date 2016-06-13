@@ -1,0 +1,147 @@
+<ol class="breadcrumb">
+	<li class="active"><a href="#incidentSearch">Gestión de
+			Subjectes</a></li>
+	<li>Detalle informe</li>
+</ol>
+<div class='' ng-controller="ReportDetailCtrl">
+	<form class="form-horizontal" role="form" novalidate>
+		<div class="">
+			<div class="col-md-1"></div>
+			<div class="col-md-10">
+
+				<fieldset class="scheduler-border">
+					<legend class="scheduler-border">Tipo de
+						Informe:{{reportFields.reportName}}</legend>
+
+
+					<ul class="nav nav-tabs">
+						<li class="active"><a data-toggle="tab" href="#encabezadoReportMenu">Encabezado</a></li>
+						<li><a data-toggle="tab" href="#cuerpoReportMenu">Cuerpo</a></li>
+						<li><a data-toggle="tab" href="#pieReportMenu">Pie</a></li>
+					</ul>
+
+					<div class="tab-content">
+						<div id="encabezadoReportMenu" class="tab-pane fade in active">
+							<fieldset class="scheduler-border">
+								<legend class="scheduler-border">Datos del IML</legend>
+								<div class="row">
+									<div class="col-sm-6">
+										<label class="control-label col-sm-2" for="instituteName">
+											Nom.Instituto</label> <input id="instituteName"
+											ng-model="report.instituteName" class="form-control" />
+									</div>
+									<div class="col-sm-6">
+										<label class="control-label col-sm-2" for="instituteClass">
+											Dir.Subdirección</label> <input id="instituteClass"
+											ng-model="report.instituteClass" class="form-control" />
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6">
+										<label class="control-label col-sm-2" for="instituteAddress">Dir.Instituto</label> <input id="instituteAddress" type="text"
+											ng-model="report.instituteAddress" class="form-control" />
+									</div>
+									<div class="col-sm-6">
+										<label class="control-label col-sm-2" for="institutePhone">Tel.Instituto </label> <input id="institutePhone"
+											ng-model="report.institutePhone" class="form-control" />
+									</div>
+								</div>
+							</fieldset>
+							<fieldset class="scheduler-border">
+								<legend class="scheduler-border">Datos del destinatario</legend>
+								<div class="row">
+									<div class="col-sm-6">
+										<label class="control-label col-sm-2" for="addresseeName">Destinatario</label>
+										<input id="addresseeName" type="text"
+											ng-model="report.addresseeName" class="col-sm-2 form-control" />
+									</div>
+									<div class="col-sm-6">
+										<label class="control-label col-sm-2" for="addresseeRefNumber">Nº/Referencia</label>
+										<input id="addresseeRefNumber" type="text"
+											ng-model="report.addresseeRefNumber"
+											class="col-sm-2 form-control" />
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6">
+										<label class="control-label col-sm-2" for="addresseeDate">Fecha</label>
+										<input id="addresseeDate" type="text"
+											ng-model="report.addresseeDate" class="col-sm-2 form-control" />
+									</div>
+									<div class="col-sm-6">
+										<label class="control-label col-sm-2" for="incidentCode">NºEpisodio </label> <input id="incidentCode" type="text"
+											ng-model="report.incidentCode" class="col-sm-2 form-control" />
+									</div>
+								</div>
+							</fieldset>
+						</div>
+						<div id="cuerpoReportMenu" class="tab-pane fade">
+							<fieldset class="scheduler-border">
+								<legend class="scheduler-border">Datos del sujeto</legend>
+								<div class="row">
+									<div class="col-sm-6">
+										<label class="control-label col-sm-2" for="subjectName">Nombre</label>
+										<input id="subjectName" type="text"
+											ng-model="report.subjectName" class="col-sm-2 form-control" />
+									</div>
+									<div class="col-sm-6">
+										<label class="control-label col-sm-2" for="subjectCode">Cod.Sujeto </label> <input id="subjectCode" type="text"
+											ng-model="report.subjectCode" class="col-sm-2 form-control" />
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6">
+										<label class="control-label col-sm-2" for="subjectIdentifier">Doc.Identificativo </label> <input id="subjectIdentifier" type="text"
+											ng-model="report.subjectIdentifier"
+											class="col-sm-2 form-control" />
+									</div>
+								</div>
+							</fieldset>
+
+							<fieldset class="scheduler-border">
+								<legend class="scheduler-border">Datos del informe</legend>
+
+								<div class="form-group"
+									ng-repeat="x in reportFields.fields">
+									<label for="name" class="col-sm-2 control-label">{{
+										x.fieldName }}</label>
+									<div class="col-sm-10">
+										<input type="text" ng-show="{{x.fieldType == 'text'}}"
+											class="form-control" id="name" name="name"
+											placeholder="{{x.fieldName }}" value="{{x.fieldValue}}" ng-model="x.fieldValue"/>
+										<textarea rows="5" ng-show="{{x.fieldType == 'textArea'}}"
+											class="form-control" id="name" name="name"
+											placeholder="{{x.fieldName }}" value="{{x.fieldValue}}" ng-model="x.fieldValue"/>
+									</div>
+								</div>
+
+							</fieldset>
+						</div>
+						<div id="pieReportMenu" class="tab-pane fade">
+							<fieldset class="scheduler-border">
+								<legend class="scheduler-border">Firma del Informe</legend>
+								<div class="row">
+									<div class="col-sm-6">
+										<label class="control-label col-sm-2" for="reportSign">Firma</label>
+										<input id="reportSign" type="text"
+											ng-model="report.reportSign" class="col-sm-2 form-control" />
+									</div>
+								</div>
+							</fieldset>
+						</div>
+					</div>
+				</fieldset>
+
+				<div class="row">
+					<div class="col-md-6 text-right">
+						<a href="#actionDetail" class="btn btn-warning .navbar-right">Atrás</a>
+						<a href="#actionDetail" ng-click="saveReport()"
+							class="btn btn-warning .navbar-right">Guardar</a>
+					</div>
+				</div>
+
+			</div>
+			<div class="col-md-1"></div>
+		</div>
+	</form>
+</div>

@@ -1,0 +1,537 @@
+{
+
+	"imlList": [{
+		"id": 1,
+		"name": "Subdirección de Ávila - Instituto de Medicina Legal de Ávila, Burgos, Segovia y Soria"
+	}, {
+		"id": 2,
+		"name": "Subdirección de Segovia - Instituto de Medicina Legal de Ávila, Burgos, Segovia y Soria"
+	}],
+
+	"tipoOrganismoJudicialList": [{
+		"id": 1,
+		"name": " Audiencia Provincial",
+		"refId": 1
+	}, {
+		"id": 2,
+		"name": "Fiscalía Audiencia Provincial",
+		"refId": 1
+	}, {
+		"id": 3,
+		"name": " Audiencia Provincial",
+		"refId": 2
+	}, {
+		"id": 4,
+		"name": "Fiscalía Audiencia Provincial",
+		"refId": 2
+	}],
+
+	"orgJudList": [{
+		"id": 1,
+		"name": " 0501937000-AUDIENCIA PROVINCIAL DE ÁVILA",
+		"refId": 1
+	}, {
+		"id": 2,
+		"name": "0501937100-AUDIENCIA PROVINCIAL DE ÁVILA. OFICINA DEL JURADO",
+		"refId": 1
+	}, {
+		"id": 3,
+		"name": "0501974000-FISCALIA PROVINCIAL DE AVILA",
+		"refId": 2
+	}, {
+		"id": 4,
+		"name": " 0511937000-AUDIENCIA PROVINCIAL DE SEGOVIA",
+		"refId": 3
+	}, {
+		"id": 5,
+		"name": "0511937100-AUDIENCIA PROVINCIAL DE SEGOVIA. OFICINA DEL JURADO",
+		"refId": 3
+	}, {
+		"id": 6,
+		"name": "0511974000-FISCALIA PROVINCIAL DE SEGOVIA",
+		"refId": 4
+	}],
+
+	"tipoProcList": [{
+		"id": 1,
+		"name": "Abono prisión provisional (Vig.Pen.)"
+	}, {
+		"id": 2,
+		"name": "Abstención / Recusación Jueces"
+	}, {
+		"id": 3,
+		"name": "Abstención Secretarios"
+	}, {
+		"id": 4,
+		"name": "Actos preatorios"
+	}, {
+		"id": 5,
+		"name": "Adopción"
+	}, {
+		"id": 6,
+		"name": "Adopción internacional"
+	}],
+
+	"roleList": [{
+		"id": 1,
+		"name": "Médico Forense"
+	}, {
+		"id": 2,
+		"name": "Psicólogo"
+	}, {
+		"id": 3,
+		"name": "Trabajador Social"
+	}, {
+		"id": 4,
+		"name": "Facultativo"
+	}],
+
+	"expertList": [{
+		"id": 1,
+		"name": "DirectorBUR1 GUERRERO HERNANDEZ",
+		"refId": 1
+	}, {
+		"id": 2,
+		"name": "FORENSEBUR1 CARRASCO CALVO",
+		"refId": 1
+	}, {
+		"id": 3,
+		"name": "FORENSEBUR2 RODRIGUEZ IGLESIAS",
+		"refId": 1
+	}, {
+		"id": 4,
+		"name": "DIRECTORCOM1 GUERREROCOM HERNANDEZCOM",
+		"refId": 1
+	}, {
+		"id": 5,
+		"name": "JEFESERVPATBUR1 ALONSO BLANCO",
+		"refId": 1
+	}, {
+		"id": 6,
+		"name": "JEFESERVCLIBUR1 HERRERA DELGADO",
+		"refId": 1
+	}, {
+		"id": 7,
+		"name": "JEFESECCCLIBUR1 DURAN MARTINEZ",
+		"refId": 1
+	}, {
+		"id": 8,
+		"name": "JEFESECCPATBUR1 MORA GOMEZ",
+		"refId": 1
+	}, {
+		"id": 9,
+		"name": "JEFESECCCLICOM1 DURANCOM MARTINEZCOM",
+		"refId": 1
+	}, {
+		"id": 10,
+		"name": "JEFESECCPATCOM1 MORACOM GOMEZCOM",
+		"refId": 1
+	}, {
+		"id": 11,
+		"name": "FORENSECOM2 RODRIGUEZCOM IGLESIASCOM",
+		"refId": 1
+	}, {
+		"id": 12,
+		"name": "PSICÓLOGOBUR2 ARIAS BRAVO",
+		"refId": 2
+	}, {
+		"id": 13,
+		"name": "PSICÓLOGOBUR1 ORTIZ VARGAS",
+		"refId": 2
+	}, {
+		"id": 14,
+		"name": "PSICÓLOGOCOM1 ORTIZCOM VARGASCOM",
+		"refId": 2
+	}, {
+		"id": 15,
+		"name": "PSICÓLOGOCOM2 ARIASCOM BRAVOCOM",
+		"refId": 2
+	}, {
+		"id": 16,
+		"name": "TRABAJADORSOCBUR2 LEON ROMERO",
+		"refId": 3
+	}, {
+		"id": 17,
+		"name": "TRABAJADORSOCBUR1 GARCIA ALONSO",
+		"refId": 3
+	}, {
+		"id": 18,
+		"name": "TRABAJADORSOCCOM1 GARCIACOM ALONSOCOM",
+		"refId": 3
+	}, {
+		"id": 19,
+		"name": "TRABAJADORSOCCOM2 LEONCOM ROMEROCOM",
+		"refId": 3
+	}, {
+		"id": 20,
+		"name": "JEFESERVLABBUR1 SANCHEZ CANO",
+		"refId": 4
+	}, {
+		"id": 21,
+		"name": "JEFESECCLABBUR1 REYES MORENO",
+		"refId": 4
+	}, {
+		"id": 22,
+		"name": "FACULTATIVOBUR1 ROMAN JIMENEZ",
+		"refId": 4
+	}, {
+		"id": 23,
+		"name": "JEFESERVLABCOM1 SANCHEZCOM CANOCOM",
+		"refId": 4
+	}, {
+		"id": 24,
+		"name": "JEFESECCLABCOM1 REYESCOM REYESCOM",
+		"refId": 4
+	}, {
+		"id": 25,
+		"name": "FACULTATIVOBUR1 ROMANCOM JIMENEZCOM",
+		"refId": 4
+	}],
+
+	"implicationList": [{
+		"id": 1,
+		"name": "Familiar"
+	}, {
+		"id": 2,
+		"name": "Otros"
+	}, {
+		"id": 3,
+		"name": "Personas del entorno de la investigación"
+	}, {
+		"id": 4,
+		"name": "Sospechoso"
+	}, {
+		"id": 5,
+		"name": "Víctima"
+	}],
+
+
+	"assistanceList": [{
+		"id": 1,
+		"name": "Lesiones en agresión"
+	}, {
+		"id": 2,
+		"name": "Lesiones en violencia de género"
+	}, {
+		"id": 3,
+		"name": "Lesiones en violencia doméstica"
+	}, {
+		"id": 4,
+		"name": "Lesiones en tráfico"
+	}, {
+		"id": 5,
+		"name": "Lesiones accidentales"
+	}, {
+		"id": 6,
+		"name": "Valoración del riesgo"
+	}, {
+		"id": 7,
+		"name": "Agresión sexual"
+	}, {
+		"id": 8,
+		"name": "Levantamiento de cadáver-autopsia"
+	}, {
+		"id": 9,
+		"name": "Extracción de órganos y trasplante"
+	}, {
+		"id": 10,
+		"name": "Laboratorio"
+	}, {
+		"id": 11,
+		"name": "Praxis médica"
+	}, {
+		"id": 12,
+		"name": "Determinación de edad y sexo"
+	}, {
+		"id": 13,
+		"name": "Registro civil otros"
+	}, {
+		"id": 14,
+		"name": "Social"
+	}, {
+		"id": 14,
+		"name": "Psiquiátrico otros"
+	}, {
+		"id": 14,
+		"name": "Imputabilidad"
+	}, {
+		"id": 14,
+		"name": "Internamiento involuntario"
+	}, {
+		"id": 14,
+		"name": "Capacidad civil"
+	}, {
+		"id": 14,
+		"name": "Drogadicción"
+	}, {
+		"id": 14,
+		"name": "Suspensión de condena"
+	}, {
+		"id": 14,
+		"name": "Detenidos"
+	}, {
+		"id": 14,
+		"name": "Filiación"
+	}],
+	
+	"tipoIdentificadorList": [{
+		"id": 1,
+		"name": "AUTORIZACIÓN DE RESIDENCIA"
+	},{
+		"id": 2,
+		"name": "CIF"
+	},{
+		"id": 3,
+		"name": "CUERPO NACIONAL DE POLICIA"
+	},{
+		"id": 4,
+		"name": "ERTZAINTZA"
+	},{
+		"id": 5,
+		"name": "GUARDIA CIVIL"
+	},{
+		"id": 6,
+		"name": "INDOCUMENTADO"
+	},{
+		"id": 7,
+		"name": "MOSSOS D’ESQUADRA"
+	},{
+		"id": 8,
+		"name": "NIF"
+	},{
+		"id": 9,
+		"name": "Nº COLEGIADO ABOGADO"
+	},{
+		"id": 10,
+		"name": "Nº COLEGIADO GRADUADO SOCIAL"
+	},{
+		"id": 11,
+		"name": "Nº COLEGIADO PERITO"
+	},{
+		"id": 12,
+		"name": "Nº COLEGIADO PROCURADOR"
+	},{
+		"id": 13,
+		"name": "NO ESPECIFICADO"
+	},{
+		"id": 14,
+		"name": "Nº EXTRANJERO (NIE)"
+	},{
+		"id": 15,
+		"name": "Nº IDENTIFICACIÓN PERSONAL CENTROS PENITENCIARIOS"
+	},{
+		"id": 16,
+		"name": "Nº INTERNO PRISION (NIS)"
+	},{
+		"id": 17,
+		"name": "Nº ORDINAL INFORMATICO (Ministerio del Interior)"
+	},{
+		"id": 18,
+		"name": "NUMERO IDENTIFICADOR VISADO"
+	},{
+		"id": 19,
+		"name": "PASAPORTE"
+	},{
+		"id": 20,
+		"name": "POLICIA AUTONOMICA DE CANARIAS"
+	},{
+		"id": 21,
+		"name": "POLICIA AUTONOMICA DE GALICIA"
+	},{
+		"id": 22,
+		"name": "POLICIA FORAL DE NAVARRA"
+	},{
+		"id": 23,
+		"name": "POLICIA LOCAL"
+	},{
+		"id": 24,
+		"name": "POLICIA SUPRANACIONAL"
+	},{
+		"id": 25,
+		"name": "POLICIA AUTONOMICA DE CANARIAS"
+	},{
+		"id": 26,
+		"name": "POLICIA FORAL DE NAVARRA"
+	},{
+		"id": 27,
+		"name": "POLICIA LOCAL"
+	},{
+		"id": 28,
+		"name": "POLICIA SUPRANACIONAL"
+	} ],
+	
+	"genderList": [{
+		"id": 1,
+		"name": "Hombre"
+	},{
+		"id": 2,
+		"name": "Mujer"
+	} ,{
+		"id": 3,
+		"name": "No consta"
+	},{
+		"id": 4,
+		"name": "Otros"
+	} ] ,
+
+	"educationList": [{
+		"id": 1,
+		"name": "Adulto aprendiendo a leer y escribir"
+	},{
+		"id": 2,
+		"name": "Adulto Cursando Graduado Escolar o Asimilado"
+	},{
+		"id": 3,
+		"name": "Adulto que sabe leer y escribir (Sin estudios)"
+	},{
+		"id": 4,
+		"name": "Analfabeto"
+	},{
+		"id": 5,
+		"name": "Ciclo Formativo Grado Medio"
+	},{
+		"id": 6,
+		"name": "Ciclo Formativo Grado Superior"
+	},{
+		"id": 7,
+		"name": "Con Bachillerato y/o C.O.U."
+	},{
+		"id": 8,
+		"name": "Con Estudios Universitarios Grado Superior"
+	} ,{
+		"id": 9,
+		"name": "Cursando Bachillerato o C.O.U."
+	} ,{
+		"id": 10,
+		"name": "Cursando Educacion Especial"
+	},{
+		"id": 11,
+		"name": "Cursando Educacion Infantil"
+	},{
+		"id": 12,
+		"name": "Cursando enseñanza obligatoria (16 años)"
+	},{
+		"id": 13,
+		"name": "Cursando Estudios Universitarios Grado Medio"
+	},{
+		"id": 14,
+		"name": "Cursando Estudios Universitarios Grado Superior"
+	},{
+		"id": 15,
+		"name": "Cursando F.P. de Grado Medio o Equivalente"
+	},{
+		"id": 16,
+		"name": "Cursando FP de Grado Superior o Equivalente"
+	},{
+		"id": 17,
+		"name": "E.S.O./ Antigua FP de Grado Medio"
+	},{
+		"id": 18,
+		"name": "Educacion Primaria"
+	} ,{
+		"id": 19,
+		"name": "Enseñaza Obligatoria Terminada"
+	}  ,{
+		"id": 20,
+		"name": "Enseñanza Univ. de 3º ciclo y/o estudios oficiales"
+	}  ,{
+		"id": 21,
+		"name": "Estudios Univ. de Grado Medio o asimilados"
+	}  ,{
+		"id": 22,
+		"name": "Garantia Social"
+	}  ,{
+		"id": 23,
+		"name": "NS/NC"
+	} ,{
+		"id": 24,
+		"name": "Sin Escolarizar (Antes edad escolar obligatoria)"
+	} ,{
+		"id": 25,
+		"name": "Sin Escolarizar (En edad escolar obligatoria)"
+	} ],
+	
+	"maritalStatusList": [{
+		"id": 1,
+		"name": "Casado"
+	},{
+		"id": 2,
+		"name": "Divorciado"
+	},{
+		"id": 3,
+		"name": "NS/NC"
+	},{
+		"id": 4,
+		"name": "Pareja de hecho"
+	},{
+		"id": 5,
+		"name": "Separado"
+	},{
+		"id": 6,
+		"name": "Soltero"
+	},{
+		"id": 7,
+		"name": "Viudo"
+	} ],
+	
+	"ocupationList": [{
+		"id": 1,
+		"name": "Estudiante, escolar o preescolar"
+	},{
+		"id": 2,
+		"name": "Incapacidad permanente para trabajar sin pension"
+	},{
+		"id": 3,
+		"name": "Jubilado (percibiendo pension)"
+	},{
+		"id": 4,
+		"name": "Labores del hogar (no remuneradas)"
+	},{
+		"id": 5,
+		"name": "NS/NC"
+	},{
+		"id": 6,
+		"name": "Ocupado"
+	},{
+		"id": 7,
+		"name": "Otra situación"
+	},{
+		"id": 8,
+		"name": "Parado buscando primer empleo"
+	} ,{
+		"id": 9,
+		"name": "Parado de larga duracion con subsidio"
+	} ,{
+		"id": 10,
+		"name": "Parado de larga duracion sin subsidio"
+	},{
+		"id": 11,
+		"name": "Parado en primer año de desemp. con subsidio"
+	},{
+		"id": 12,
+		"name": "Parado en primer año de desemp. sin subsidio"
+	},{
+		"id": 13,
+		"name": "Percibiendo otras prest. econ. periódicas"
+	} ],
+	
+	"actionStatusList": [{
+		"id": 1,
+		"name": "ABIERTA"
+	},{
+		"id": 2,
+		"name": "PENDIENTE DE INFORMACIÓN"
+	},{
+		"id": 3,
+		"name": "TRAMITADA"
+	} ]
+	
+	,
+	
+	"reportTypeList": [{
+		"id": 1,
+		"name": "Documento Texto Libre"
+	}
+	]
+
+}

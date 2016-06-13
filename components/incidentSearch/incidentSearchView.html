@@ -1,0 +1,32 @@
+<ol class="breadcrumb">
+	<li class="active"><a href="#incidentSearch">Gestión de
+			Episodios</a></li>
+	<li>Búsqueda de Episodios</li>
+</ol>
+
+<div class='row' ng-controller="IncidentDetailCtrl">
+	<div class="col-md-1"></div>
+	<div class="col-md-10">
+		<fieldset class="scheduler-border">
+			<legend class="scheduler-border">Buscar Episodios</legend>
+
+			<form class='form-group form-inline' novalidate>
+				<input class='form-control' ng-model='search' id='search-input'
+					placeholder='Search...' autocomplete='off' type='text'/>
+				<a href="#" ng-click="executeSearch()"><span
+					class="glyphicon glyphicon-search"></span></a>
+			</form>
+
+			<p class="text-right">
+				<a href="#incidentDetail" ng-click="setSelectedIncident('')"><span
+					class="glyphicon glyphicon-plus"></span></a>
+			</p>
+			<!-- http://plnkr.co/edit/UttxPkXG8fYQDX85fnyZ?p=preview -->
+			
+			<div ui-grid="incidentGridOptions" ui-grid-pagination
+				ui-grid-selection class="grid"></div>
+
+		</fieldset>
+
+	</div>
+</div>

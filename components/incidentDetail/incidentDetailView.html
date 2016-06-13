@@ -1,0 +1,284 @@
+<ol class="breadcrumb">
+  <li class="active">
+    <a href="#incidentSearch">Gestión de
+      Episodios
+    </a>
+  </li>
+  <li>Detalle Episodio
+  </li>
+</ol>
+<div class='row' ng-controller="IncidentDetailCtrl">
+  <div class="col-md-1">
+    <span>
+    </span>
+  </div>
+  <div class="col-md-10">
+    <form name="myForm" class="form-horizontal" role="form" novalidate>
+      <ul class="nav nav-tabs">
+        <li class="active">
+          <a data-toggle="tab" 
+             href="#menuIncidentDetail">Episodio
+          </a>
+        </li>
+        <li>
+					<a ng-show="!showIncidentCode()">Sujetos y actuaciones
+					</a>
+				  <a data-toggle="tab" ng-show="showIncidentCode()"
+										 href="#menuSujetosYActuaciones">Sujetos y actuaciones
+					</a>
+
+
+        </li>
+      </ul>
+      <div class="tab-content">
+        <div id="menuIncidentDetail" class="tab-pane fade in active">
+          <div class="row">
+            <div class="col-md-1">
+              <span>
+              </span>
+            </div>
+            <div class="col-md-10">
+              <fieldset class="scheduler-border">
+                <legend class="scheduler-border">
+                  <span ng-show="!showIncidentCode()">Nuevo Episodio
+                  </span>
+                  <span
+                        ng-show="showIncidentCode()">Episodio
+                    {{incident.incidentCode}}
+                  </span>
+                </legend>
+                <fieldset class="scheduler-border">
+                  <legend class="scheduler-border">Organo Judicial
+                  </legend>
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <label class="control-label" for="idIml">Dirección/
+                        Subdirección
+                      </label>
+                      <select id="idIml" name="idIml"
+                              ng-change="getTipoOrgJudicialesItems()"
+                              ng-model="incident.idIml"
+                              ng-options="obj.id as obj.name for obj in imlItems"
+                              class="form-control">
+                        <option value="0">Escoja una opci&oacute;n
+                        </option>
+                      </select>
+                    </div>
+                    <div class="col-sm-4">
+                      <label for="idtipoorgjudicial" class="control-label"
+                             for="idTipoorgjudicial">Tipo Organismo Judicial
+                      </label>
+                      <select
+                              id="idTipoorgjudicial" ng-change="getOrgJudicialItems()"
+                              ng-model="incident.idTipoorgjudicial"
+                              name="idTipoorgjudicial"
+                              ng-options="obj.id as obj.name for obj in tipoOrgJudicialesItems"
+                              class="form-control">
+                      </select>
+                    </div>
+                    <div class="col-sm-4">
+                      <label for="idxmorgjudicial" class="control-label"
+                             for="judicialBodyId">Organo Judicial
+                      </label>
+                      <select
+                              id="judicialBodyId" ng-model="incident.judicialBodyId"
+                              ng-options="obj.id as obj.name for obj in orgJudicialItems"
+                              name="judicialBodyId" class="form-control" required>
+                        <option value="0">Escoja una opci&oacute;n
+                        </option>
+                      </select>
+                      <p ng-show="myForm.judicialBodyId.$error.required"
+                         class="help-block">Debe seleccionar un organo judicial
+                      </p>
+                    </div>
+                  </div>
+                </fieldset>
+                <fieldset class="scheduler-border">
+                  <legend class="scheduler-border">Procedimiento
+                  </legend>
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <label class="control-label" for="idxctipoprocedimiento">Tipo
+                        procedimiento
+                      </label>
+                      <select id="idxctipoprocedimiento"
+                              name="idxctipoprocedimiento"
+                              ng-model="incident.procedureType"
+                              ng-options="obj.id as obj.name for obj in tipoProcList"
+                              class="form-control" required>
+                        <option value="0">Escoja una opci&oacute;n
+                        </option>
+                      </select>
+                      <p ng-show="myForm.idxctipoprocedimiento.$error.required"
+                         class="help-block">Debe seleccionar un tipo de
+                        procedimiento
+                      </p>
+                    </div>
+                    <div class="col-sm-4"
+                         ng-class="{ 'has-error' : myForm.txnumprocedimiento.$invalid && !myForm.txnumprocedimiento.$pristine }">
+                      <label class="control-label" for="txnumprocedimiento">Número
+                        de Procedimiento/Año
+                      </label>
+                      <input id="txnumprocedimiento"
+                             name="txnumprocedimiento" type="text" value=""
+                             placeholder="Ejemplo: 1248/2005"
+                             ng-model="incident.procedureNumber" class="form-control"
+                             ng-minlength="6" ng-maxlength="28"
+                             numprocedimiento-validation>
+                      <p ng-show="myForm.txnumprocedimiento.$error.minlength"
+                         class="help-block">Faltan caracteres
+                      </p>
+                      <p ng-show="myForm.txnumprocedimiento.$error.maxlength"
+                         class="help-block">Exceso de caracteres
+                      </p>
+                    </div>
+                    <div class="col-sm-4"
+                         ng-class="{ 'has-error' : myForm.txnig.$invalid && !myForm.txnig.$pristine }">
+                      <label class="control-label" for="txnig">NIG
+                      </label>
+                      <input
+                             id="txnig" name="txnig" type="text" value=""
+                             ng-model="incident.nig" class="form-control" ng-minlength="2"
+                             ng-maxlength="16" />
+                      <p ng-show="myForm.txnig.$error.minlength" class="help-block">Faltan
+                        caracteres
+                      </p>
+                      <p ng-show="myForm.txnig.$error.maxlength" class="help-block">Exceso
+                        de caracteres
+                      </p>
+                    </div>
+                  </div>
+                </fieldset>
+                <fieldset class="scheduler-border">
+                  <legend class="scheduler-border">Hecho
+                  </legend>
+                  <div class="col-sm-4">
+                    <label class="control-label" for="fechatmhecho">Fecha
+                      Hecho
+                    </label>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <p class="input-group">
+                          <input type="text" class="form-control"
+                                 uib-datepicker-popup="{{format}}"
+                                 ng-model="incident.factTimeInYear" is-open="popup1.opened"
+                                 datepicker-options="dateOptions" ng-required="true"
+                                 close-text="Close" alt-input-formats="altInputFormats" />
+                          <span class="input-group-btn">
+                            <button type="button" class="btn btn-default"
+                                    ng-click="open1()">
+                              <i class="glyphicon glyphicon-calendar">
+                              </i>
+                            </button>
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <label class="control-label" for="horahecho">Hora Hecho
+                    </label>
+                    <input type="time" id="horahecho" name="horahecho"
+                           ng-model="incident.factTimeInDay" placeholder="HH:mm"  class="form-control" required />
+                  </div>
+                </fieldset>
+                <fieldset class="scheduler-border">
+                  <legend class="scheduler-border">Opciones
+                  </legend>
+                  <div class="row">
+                    <div class="form-group row col-sm-10 ">
+                      <label class="checkbox-inline">
+                        <input type="checkbox"
+                               ng-model="incident.isGenderViolence" />Violencia de género
+                      </label>
+                      <label class="checkbox-inline">
+                        <input
+                               type="checkbox" ng-model="incident.isProtectedWitness" />Testigo
+                        Protegido
+                      </label>
+                      <label class="checkbox-inline">
+                        <input
+                               type="checkbox" ng-model="incident.isWithPrisioner" />Causa
+                        con Preso
+                      </label>
+                      <label class="checkbox-inline">
+                        <input
+                               type="checkbox" ng-model="incident.isConfidential" />Secreto
+                        sumario
+                      </label>
+                      <label class="checkbox-inline">
+                        <input
+                               type="checkbox" ng-model="incident.isTemporary" />Registro
+                        provisional
+                      </label>
+                      <label class="checkbox-inline">
+                        <input id="btprivada"
+                               name="btprivada" type="checkbox"
+                               ng-model="incident.isPrivate" value="true" /> Pericia
+                        Privada
+                      </label>
+                    </div>
+                    <div class="col-sm-2">
+                      <label class="control-label" for="insuranceCompany">
+                        Aseguradora
+                      </label>
+                      <input id="insuranceCompany" name="txnig"
+                             type="text" ng-disabled="!incident.isPrivate"
+                             ng-model="incident.insuranceCompany" class="form-control" />
+                    </div>
+                  </div>
+                </fieldset>
+              </fieldset>
+            </div>
+            <div class="col-md-1">
+            </div>
+          </div>
+        </div>
+        <div id="menuSujetosYActuaciones" class="tab-pane fade">
+          <div class="row">
+            <div class="col-md-1">
+              <span>
+              </span>
+            </div>
+            <div class="col-md-10">
+              <fieldset class="scheduler-border">
+                <legend class="scheduler-border">Sujetos y actuaciones
+                </legend>
+                <p class="text-right">
+                  <a href="#subjectDetail">
+                    <span
+                          class="glyphicon glyphicon-plus"
+                          ng-click="setSelectedSubject('')">
+                    </span>
+                  </a>
+                </p>
+                <div class="row">
+                  <div id="grid1" ui-grid="gridOptions" ui-grid-tree-view
+                       ui-grid-selection class="grid">
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+            <div class="col-md-1">
+              <span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 text-right">
+            <a href="#incidentSearch" class="btn btn-warning .navbar-right">Atrás
+            </a>
+            <a class="btn btn-warning .navbar-right" data-toggle="tab" ng-click="saveIncident()"
+               href="#" ng-disabled="myForm.$invalid">Guardar
+            </a>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="col-md-1">
+    <span>
+    </span>
+  </div>
+</div>
